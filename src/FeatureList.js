@@ -4,7 +4,7 @@ import React from 'react'
 import slugify from 'slugify';
 import USCurrencyFormat from './USCurrencyFormat'
 import FEATURES from './featureOptions'
-import FeatureItem from './featureItem'
+import FeatureItem from './FeatureItem'
 
   class FeatureList extends React.Component{
 
@@ -12,10 +12,10 @@ import FeatureItem from './featureItem'
 
     render(){
       const features = Object.keys(FEATURES).map((feature, idx) => {
-        const featureHash = feature + '-' + idx;
+        const featureHash = feature + '-' + idx
         
         const options = FEATURES[feature].map(item => {
-        const itemHash = slugify(JSON.stringify(item));
+        const itemHash = slugify(JSON.stringify(item))
           return (
             <FeatureItem
                     key={itemHash}
@@ -27,8 +27,8 @@ import FeatureItem from './featureItem'
                     item={item}
                     cost={USCurrencyFormat.format(item.cost)}
                 />
-          );
-        });
+          )
+        })
     
         return (
           <fieldset className="feature" key={featureHash}>
