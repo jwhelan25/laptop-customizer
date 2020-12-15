@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MainForm from './MainForm'
 import MainSummary from './MainSummary'
-import features from './featureOptions'
+import FEATURES from './featureOptions'
 
 // This object will allow us to
 // easily convert numbers into US dollar values
@@ -14,7 +14,7 @@ class App extends Component {
   state = {
     selected: {
       Processor: {
-        name: '18th Generation Intel Core HB (7 Core with donut spare)',
+        name: '17th Generation Intel Core HB (7 Core with donut spare)',
         cost: 700
       },
       'Operating System': {
