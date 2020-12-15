@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import './App.css';
 import MainForm from './MainForm'
 import MainSummary from './MainSummary'
-import FEATURES from './featureOptions'
 
 // This object will allow us to
 // easily convert numbers into US dollar values
